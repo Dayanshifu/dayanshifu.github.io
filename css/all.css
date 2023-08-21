@@ -60,6 +60,11 @@ body{
   text-align:center; 
   text-decoration: none;
 }
+#bcm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .nav a:hover {
   text-decoration: none; 
   color:rgb(190, 255, 197);
@@ -72,4 +77,7 @@ body{
   top: 5px; 
   left:0px; 
   padding:1px 3px;
+}
+.nav a:hover i{
+  color:rgb(190, 255, 197);
 }
