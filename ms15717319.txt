@@ -1,5 +1,0 @@
-﻿{
-  "Description": "Microsoft 365 的域所有权验证文件 - 放置在网站根目录中",
-  "Domain": "littleyan.tk",
-  "Id": "da26d939-3d70-4496-bf2b-830c2a048618"
-}
