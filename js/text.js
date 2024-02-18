@@ -3,7 +3,7 @@ var 文本 =
 "\
 In [1]: let Dayanshifu = EntityFactory.getEntity('Dayanshifu')\n\
 0ut [1]: [Entity: Dayanshifu] \n\
-          <img src='https://avatars.githubusercontent.com/u/89624700' style='border-radius:96px' width='128px' height='128px'/>\n\
+          <img src='https://static.codemao.cn/pickduck/HJTNP4yn6.jpg' style='border-radius:96px' width='128px' height='128px'/>\n\
           Hello! \n\
           I'm little颜\n\
 In [2]: Dayanshifu.Site()\n\
