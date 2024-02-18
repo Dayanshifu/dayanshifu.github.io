@@ -1,5 +1,5 @@
 body{
-    background-image: url(https://static.codemao.cn/pickduck/B1bN0VJna.jpg)!important;
+    background-image: url('https://fystart.com/background.webp')!important;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -25,7 +25,7 @@ a{color:aquamarine;
 	bottom: 0;
 	position: absolute;
   font-family: "Courier New", Courier, monospace;  
-  background-color: #0000006b;  
+  background-color: #00000094;  
   color: #fff;  
   padding: 10px;  
   align-items: start;

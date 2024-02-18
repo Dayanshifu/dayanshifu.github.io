@@ -7,20 +7,23 @@ In [1]: let Dayanshifu = EntityFactory.getEntity('Dayanshifu')\n\
           Hello! \n\
           I'm little颜\n\
 In [2]: Dayanshifu.Site()\n\
-Out [2]: *Web server started at: <a id='l1' href='https://dayanshifu.github.io'>\n\
+Out [2]: *website at <a id='l1' href='https://dayanshifu.github.io'>\n\
+         *<image src='https://www.bilibili.com/favicon.ico'width='16px' height='16px'/>bilibili: <a id='l9' target='_blank' href='https://space.bilibili.com/593963058'>\n\
+         *<image src='https://static.codemao.cn/coco/player/unstable/B1F3qc2Hj.image/svg+xml'width='16px' height='16px'/>codemao: <a id='l10' target='_blank' href='https://shequ.codemao.cn/user/3408348'>\n\
+         *<image src='https://static.codemao.cn/pickduck/B19iXrknT.svg'width='16px' height='16px'/>github: <a id='l11' target='_blank' href='https://github.com/dayanshifu'>\n\
 In [3]: Dayanshifu.getWorks()\n\
 Out [3]: {'hao-littleyan': {\n\
             'Description': '👏一个简洁方便的浏览器首页', \n\
-            'Github': <a id='l2' href='https://github.com/Dayanshifu/hao-littleyan'>, \n\
-            'Site': <a id='l3' href='https://github.com/Dayanshifu/hao-littleyan'>\n\
+            'Github': <a id='l2' target='_blank' href='https://github.com/Dayanshifu/hao-littleyan'>, \n\
+            'Site': <a id='l3' target='_blank' href='https://github.com/Dayanshifu/hao-littleyan'>\n\
             }\n\
           }\n\
 In [4]: Dayanshifu.getLinks()\n\
 Out [4]: {'感谢你们的支持':'site',\n\
-          '<img src='https://glacier.tyser.bf/res/icon/icon.svg' height='24px' width='24px'>冰川工作室':<a id='l4' href='https://glacier.tyser.bf/'>,\n\
-          '<img src='https://slightning.rechen.xyz/res/SLIGHTNING/avatar.png' height='24px' width='24px'>SLIGHTNING':<a id='l5' href='https://slightning.rechen.xyz/'>,\n\
-          '<img src='https://zmh-program.site/avatar/zmh-program.webp' height='24px' width='24px'>zmh-program': <a id='l6' href='https://zmh-program.site/'>,\n\
-          '<img src='https://blog.lolicon.best/img/favicon.webp' height='24px' width='24px'>半昭の小站': <a id='l7' href='https://blog.lolicon.best/'>\n\
+          '<img src='https://glacier.tyser.bf/res/icon/icon.svg' height='24px' width='24px'>冰川工作室':<a id='l4' target='_blank' href='https://glacier.tyser.bf/'>,\n\
+          '<img src='https://static.codemao.cn/pickduck/SJyHSSkh6.png' height='24px' width='24px'>SLIGHTNING':<a id='l5' target='_blank' href='https://slightning.rechen.xyz/'>,\n\
+          '<img src='https://zmh-program.site/avatar/zmh-program.webp' height='24px' width='24px'>zmh-program': <a id='l6' target='_blank' href='https://zmh-program.site/'>,\n\
+          '<img src='https://blog.lolicon.best/img/favicon.webp' height='24px' width='24px'>半昭の小站': <a id='l7' target='_blank' href='https://blog.lolicon.best/'>\n\
           }\n\
 In [5]: getCountdown2zhongkao(Dayanshifu)\n\
 Out [5]: '<span id='countdown'>'\n\
@@ -38,6 +41,9 @@ function 给标签上内容(){
   var l6 = document.getElementById("l6");
   var l7 = document.getElementById("l7");
   var l8 = document.getElementById("l8");
+  var l9 = document.getElementById("l9");
+  var l10 = document.getElementById("l10");
+  var l11 = document.getElementById("l11");
   var cursor = document.getElementById("cursor");
   l1.innerHTML="'https://dayanshifu.github.io'"
   l2.innerHTML="'https://github.com/Dayanshifu/hao-littleyan'"
@@ -47,6 +53,9 @@ function 给标签上内容(){
   l6.innerHTML="'https://zmh-program.site/'"
   l7.innerHTML="'https://blog.lolicon.best/'"
   l8.innerHTML="little颜"
+  l9 .innerHTML="'https://space.bilibili.com/593963058'"
+  l10.innerHTML="'https://shequ.codemao.cn/user/3408348'"
+  l11.innerHTML="https://github.com/dayanshifu"
   cursor.innerHTML='|'
   var 今年 = new Date().getFullYear();
   document.getElementById("2year").innerHTML = 今年;
