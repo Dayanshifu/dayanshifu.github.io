@@ -3,25 +3,25 @@ var 文本 =
 "\
 In [1]: let Dayanshifu = EntityFactory.getEntity('Dayanshifu')\n\
 0ut [1]: [Entity: Dayanshifu] \n\
-    <img src='https://avatars.githubusercontent.com/u/89624700' style='border-radius:96px' width='128px' height='128px'/>\n\
-    Hello! \n\
-    I'm little颜\n\
+          <img src='https://avatars.githubusercontent.com/u/89624700' style='border-radius:96px' width='128px' height='128px'/>\n\
+          Hello! \n\
+          I'm little颜\n\
 In [2]: Dayanshifu.Site()\n\
 Out [2]: *Web server started at: <a id='l1' href='https://dayanshifu.github.io'>\n\
 In [3]: Dayanshifu.getWorks()\n\
 Out [3]: {'hao-littleyan': {\n\
-    'Description': '👏一个简洁方便的浏览器首页', \n\
-    'Github': <a id='l2' href='https://github.com/Dayanshifu/hao-littleyan'>, \n\
-    'Site': <a id='l3' href='https://github.com/Dayanshifu/hao-littleyan'>\n\
-    }\n\
-  }\n\
+            'Description': '👏一个简洁方便的浏览器首页', \n\
+            'Github': <a id='l2' href='https://github.com/Dayanshifu/hao-littleyan'>, \n\
+            'Site': <a id='l3' href='https://github.com/Dayanshifu/hao-littleyan'>\n\
+            }\n\
+          }\n\
 In [4]: Dayanshifu.getLinks()\n\
 Out [4]: {'感谢你们的支持':'site',\n\
-  '<img src='https://glacier.tyser.bf/res/icon/icon.svg' height='24px' width='24px'>冰川工作室':<a id='l4' href='https://glacier.tyser.bf/'>,\n\
-  '<img src='https://slightning.rechen.xyz/res/SLIGHTNING/avatar.png' height='24px' width='24px'>SLIGHTNING':<a id='l5' href='https://slightning.rechen.xyz/'>,\n\
-  '<img src='https://zmh-program.site/avatar/zmh-program.webp' height='24px' width='24px'>zmh-program': <a id='l6' href='https://zmh-program.site/'>,\n\
-  '<img src='https://blog.lolicon.best/img/favicon.webp' height='24px' width='24px'>半昭の小站': <a id='l7' href='https://blog.lolicon.best/'>\n\
-  }\n\
+          '<img src='https://glacier.tyser.bf/res/icon/icon.svg' height='24px' width='24px'>冰川工作室':<a id='l4' href='https://glacier.tyser.bf/'>,\n\
+          '<img src='https://slightning.rechen.xyz/res/SLIGHTNING/avatar.png' height='24px' width='24px'>SLIGHTNING':<a id='l5' href='https://slightning.rechen.xyz/'>,\n\
+          '<img src='https://zmh-program.site/avatar/zmh-program.webp' height='24px' width='24px'>zmh-program': <a id='l6' href='https://zmh-program.site/'>,\n\
+          '<img src='https://blog.lolicon.best/img/favicon.webp' height='24px' width='24px'>半昭の小站': <a id='l7' href='https://blog.lolicon.best/'>\n\
+          }\n\
 In [5]: getCountdown2zhongkao(Dayanshifu)\n\
 Out [5]: '<span id='countdown'>'\n\
 In [6]: getInfo()\n\

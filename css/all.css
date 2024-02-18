@@ -10,17 +10,9 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
   }
-a{color:white;
+a{color:aquamarine;
     text-decoration:none;
     }
-.container{
-  background-color: rgba(0, 255, 204, 0.73);
-  padding-bottom: 20px;
-  padding-top: 20px;
-  border-radius: 20px;
-  max-width: 300px;
-  height:485px;
-}
 
 #terminal {
   overflow-y:auto;
