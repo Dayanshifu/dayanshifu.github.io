@@ -36,6 +36,7 @@ a{color:aquamarine;
   display: none;
 }
 
+#input{margin-left: 10px; margin-top: 5px; margin-bottom: 5px;}
 
 @keyframes blink {
   0%, 100% {
