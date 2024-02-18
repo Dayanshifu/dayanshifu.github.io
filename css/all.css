@@ -29,6 +29,8 @@ a{color:aquamarine;
   color: #fff;  
   padding: 10px;  
   align-items: start;
+  border-radius: 15px;
+  border:2px solid aquamarine
 }
 
 

@@ -92,7 +92,7 @@ setTimeout(function () {
 }, 30);
 setTimeout(function () {
   给标签上内容();
-},10000);
+},500);
 }
 终端输出(文本, 0);
 setInterval(计时器更新, 1000);
