@@ -34,6 +34,9 @@ var 输出区 = document.getElementById("input");
 
 function 给标签上内容(){
   var l1 = document.getElementById("l1");
+  var l9 = document.getElementById("l9");
+  var l10 = document.getElementById("l10");
+  var l11 = document.getElementById("l11");
   var l2 = document.getElementById("l2");
   var l3 = document.getElementById("l3");
   var l4 = document.getElementById("l4");
@@ -41,9 +44,6 @@ function 给标签上内容(){
   var l6 = document.getElementById("l6");
   var l7 = document.getElementById("l7");
   var l8 = document.getElementById("l8");
-  var l9 = document.getElementById("l9");
-  var l10 = document.getElementById("l10");
-  var l11 = document.getElementById("l11");
   var cursor = document.getElementById("cursor");
   l1.innerHTML="'https://dayanshifu.github.io'";
   l9 .innerHTML="'https://space.bilibili.com/593963058'";
