@@ -89,7 +89,7 @@ else {
 输出区.appendChild(文字标签);
 setTimeout(function () {
   终端输出(文本, i + 1);
-}, 0);
+}, 30);
 setTimeout(function () {
   给标签上内容();
 },0);
