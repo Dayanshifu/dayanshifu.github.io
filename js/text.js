@@ -30,26 +30,26 @@ In [7]: <span id='cursor'><script src='js/scroll.js'>";
 var 输出区 = document.getElementById("input");
 
 function 给标签上内容(){
-var l1 = document.getElementById("l1");
-var l2 = document.getElementById("l2");
-var l3 = document.getElementById("l3");
-var l4 = document.getElementById("l4");
-var l5 = document.getElementById("l5");
-var l6 = document.getElementById("l6");
-var l7 = document.getElementById("l7");
-var l8 = document.getElementById("l8");
-var cursor = document.getElementById("cursor");
-l1.innerHTML="'https://dayanshifu.github.io'"
-l2.innerHTML="'https://github.com/Dayanshifu/hao-littleyan'"
-l3.innerHTML="'https://github.com/Dayanshifu/hao-littleyan'"
-l4.innerHTML="'https://glacier.tyser.bf/'"
-l5.innerHTML="'https://slightning.rechen.xyz/'"
-l6.innerHTML="'https://zmh-program.site/'"
-l7.innerHTML="'https://blog.lolicon.best/'"
-l8.innerHTML="little颜"
-cursor.innerHTML='|'
-var 今年 = new Date().getFullYear();
-document.getElementById("2year").innerHTML = 今年;
+  var l1 = document.getElementById("l1");
+  var l2 = document.getElementById("l2");
+  var l3 = document.getElementById("l3");
+  var l4 = document.getElementById("l4");
+  var l5 = document.getElementById("l5");
+  var l6 = document.getElementById("l6");
+  var l7 = document.getElementById("l7");
+  var l8 = document.getElementById("l8");
+  var cursor = document.getElementById("cursor");
+  l1.innerHTML="'https://dayanshifu.github.io'"
+  l2.innerHTML="'https://github.com/Dayanshifu/hao-littleyan'"
+  l3.innerHTML="'https://github.com/Dayanshifu/hao-littleyan'"
+  l4.innerHTML="'https://glacier.tyser.bf/'"
+  l5.innerHTML="'https://slightning.rechen.xyz/'"
+  l6.innerHTML="'https://zmh-program.site/'"
+  l7.innerHTML="'https://blog.lolicon.best/'"
+  l8.innerHTML="little颜"
+  cursor.innerHTML='|'
+  var 今年 = new Date().getFullYear();
+  document.getElementById("2year").innerHTML = 今年;
 }
 
 var 中考日期 = new Date("2024-06-16T00:00:00"); 
