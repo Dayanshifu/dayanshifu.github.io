@@ -7,10 +7,11 @@ In [1]: let Dayanshifu = EntityFactory.getEntity('Dayanshifu')\n\
           Hello! \n\
           I'm little颜\n\
 In [2]: Dayanshifu.Site()\n\
-Out [2]: *website at <a id='l1' href='https://dayanshifu.github.io'>\n\
-         *<image src='https://www.bilibili.com/favicon.ico'width='16px' height='16px'/>bilibili: <a id='l9' target='_blank' href='https://space.bilibili.com/593963058'>\n\
-         *<image src='https://static.codemao.cn/coco/player/unstable/B1F3qc2Hj.image/svg+xml'width='16px' height='16px'/>codemao: <a id='l10' target='_blank' href='https://shequ.codemao.cn/user/3408348'>\n\
-         *<image src='https://static.codemao.cn/pickduck/B19iXrknT.svg'width='16px' height='16px'/>github: <a id='l11' target='_blank' href='https://github.com/dayanshifu'>\n\
+Out [2]: {'website':<a id='l1' href='https://dayanshifu.github.io'>,\n\
+          '<image src='https://www.bilibili.com/favicon.ico'width='16px' height='16px'/>bilibili': <a id='l9' target='_blank' href='https://space.bilibili.com/593963058'>,\n\
+          '<image src='https://static.codemao.cn/coco/player/unstable/B1F3qc2Hj.image/svg+xml'width='16px' height='16px'/>codemao': <a id='l10' target='_blank' href='https://shequ.codemao.cn/user/3408348'>,\n\
+          '<image src='https://static.codemao.cn/pickduck/B19iXrknT.svg'width='16px' height='16px'/>github': <a id='l11' target='_blank' href='https://github.com/dayanshifu'>\n\
+          }\n\
 In [3]: Dayanshifu.getWorks()\n\
 Out [3]: {'hao-littleyan': {\n\
             'Description': '👏一个简洁方便的浏览器首页', \n\
@@ -33,46 +34,46 @@ In [7]: <span id='cursor'><script src='js/scroll.js'>";
 var 输出区 = document.getElementById("input");
 
 function 给标签上内容(){
-  var l1 = document.getElementById("l1");
-  var l9 = document.getElementById("l9");
-  var l10 = document.getElementById("l10");
-  var l11 = document.getElementById("l11");
-  var l2 = document.getElementById("l2");
-  var l3 = document.getElementById("l3");
-  var l4 = document.getElementById("l4");
-  var l5 = document.getElementById("l5");
-  var l6 = document.getElementById("l6");
-  var l7 = document.getElementById("l7");
-  var l8 = document.getElementById("l8");
-  var cursor = document.getElementById("cursor");
-  l1.innerHTML="'https://dayanshifu.github.io'";
-  l9 .innerHTML="'https://space.bilibili.com/593963058'";
-  l10.innerHTML="'https://shequ.codemao.cn/user/3408348'";
-  l11.innerHTML="'https://github.com/dayanshifu'";
-  l2.innerHTML="'https://github.com/Dayanshifu/hao-littleyan'";
-  l3.innerHTML="'https://dayanshifu.github.io/hao-littleyan'";
-  l4.innerHTML="'https://glacier.tyser.bf/'";
-  l5.innerHTML="'https://slightning.rechen.xyz/'";
-  l6.innerHTML="'https://zmh-program.site/'";
-  l7.innerHTML="'https://blog.lolicon.best/'";
-  l8.innerHTML="little颜";
-  cursor.innerHTML='|';
-  var 今年 = new Date().getFullYear();
-  document.getElementById("2year").innerHTML = 今年;
+  try{var l1 = document.getElementById("l1");
+  l1.innerHTML="'https://dayanshifu.github.io'";}catch{}
+  try{var l9 = document.getElementById("l9");
+  l9 .innerHTML="'https://space.bilibili.com/593963058'";}catch{}
+  try{var l10 = document.getElementById("l10");
+  l10.innerHTML="'https://shequ.codemao.cn/user/3408348'";}catch{}
+  try{var l11 = document.getElementById("l11");
+  l11.innerHTML="'https://github.com/dayanshifu'";}catch{}
+  try{var l2 = document.getElementById("l2");
+  l2.innerHTML="'https://github.com/Dayanshifu/hao-littleyan'";}catch{}
+  try{var l3 = document.getElementById("l3");
+  l3.innerHTML="'https://dayanshifu.github.io/hao-littleyan'";}catch{}
+  try{var l4 = document.getElementById("l4");
+  l4.innerHTML="'https://glacier.tyser.bf/'";}catch{}
+  try{var l5 = document.getElementById("l5");
+  l5.innerHTML="'https://slightning.rechen.xyz/'";}catch{}
+  try{var l6 = document.getElementById("l6");
+  l6.innerHTML="'https://zmh-program.site/'";}catch{}
+  try{var l7 = document.getElementById("l7");
+  l7.innerHTML="'https://blog.lolicon.best/'";}catch{}
+  try{var l8 = document.getElementById("l8");
+  l8.innerHTML="little颜";}catch{}
+  try{var cursor = document.getElementById("cursor");
+  cursor.innerHTML='|';}catch{}
+  try{var 今年 = new Date().getFullYear();
+  document.getElementById("2year").innerHTML = 今年;}catch{}
 }
 
 var 中考日期 = new Date("2024-06-16T00:00:00"); 
 
 function 计时器更新() {  
-var 现在日期 = new Date();  
-var 还剩 = 中考日期 - 现在日期;  
-var 天数 = Math.floor(还剩 / (1000 * 60 * 60 * 24));  
-var 小时数 = Math.floor((还剩 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));  
-var 分钟数 = Math.floor((还剩 % (1000 * 60 * 60)) / (1000 * 60));  
-var 秒数 = Math.floor((还剩 % (1000 * 60)) / 1000);  
-var 倒计时文本 = 天数 + "d" + 小时数 + "h" + 分钟数 + "min" + 秒数 + "s";  
-var 倒计时标签 = document.getElementById("countdown");  
-倒计时标签.textContent = 倒计时文本;  
+  var 现在日期 = new Date();  
+  var 还剩 = 中考日期 - 现在日期;  
+  var 天数 = Math.floor(还剩 / (1000 * 60 * 60 * 24));  
+  var 小时数 = Math.floor((还剩 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));  
+  var 分钟数 = Math.floor((还剩 % (1000 * 60 * 60)) / (1000 * 60));  
+  var 秒数 = Math.floor((还剩 % (1000 * 60)) / 1000);  
+  var 倒计时文本 = 天数 + "d" + 小时数 + "h" + 分钟数 + "min" + 秒数 + "s";  
+  try{var 倒计时标签 = document.getElementById("countdown");  
+  倒计时标签.textContent = 倒计时文本;  }catch{}
 }  
 
 function 终端输出(文本, i) {
@@ -98,10 +99,8 @@ else {
 输出区.appendChild(文字标签);
 setTimeout(function () {
   终端输出(文本, i + 1);
-}, 30);
-setTimeout(function () {
-  给标签上内容();
-},500);
+}, 0);
+给标签上内容();
 }
 终端输出(文本, 0);
 setInterval(计时器更新, 1000);
