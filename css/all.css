@@ -10,14 +10,14 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
   }
-a{color:aquamarine;
+a{color:aquamarine;   
     text-decoration:none;
     }
 
 #terminal {
   overflow-y:auto;
   margin: auto;
-  max-height:480px;
+  max-height:475px;
   max-width: 720px;
 	top: 0;
 	left: 0;
