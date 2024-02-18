@@ -20,7 +20,7 @@ Out [3]: {'hao-littleyan': {\n\
             }\n\
           }\n\
 In [4]: Dayanshifu.getLinks()\n\
-Out [4]: {'感谢你们的支持':'site',\n\
+Out [4]: {'感谢你们的支持！':'site',\n\
           '<img src='https://glacier.tyser.bf/res/icon/icon.svg' height='24px' width='24px'>冰川工作室':<a id='l4' target='_blank' href='https://glacier.tyser.bf/'>,\n\
           '<img src='https://static.codemao.cn/pickduck/SJyHSSkh6.png' height='24px' width='24px'>SLIGHTNING':<a id='l5' target='_blank' href='https://slightning.rechen.xyz/'>,\n\
           '<img src='https://zmh-program.site/avatar/zmh-program.webp' height='24px' width='24px'>zmh-program': <a id='l6' target='_blank' href='https://zmh-program.site/'>,\n\
@@ -99,7 +99,7 @@ else {
 输出区.appendChild(文字标签);
 setTimeout(function () {
   终端输出(文本, i + 1);
-}, 0);
+}, 35);
 给标签上内容();
 }
 终端输出(文本, 0);
