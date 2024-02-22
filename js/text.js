@@ -24,7 +24,8 @@ Out [4]: {'感谢你们的支持！':'site',\n\
           '<img src='https://glacier.tyser.bf/res/icon/icon.svg' height='24px' width='24px'>冰川工作室':<a id='l4' target='_blank' href='https://glacier.tyser.bf/'>,\n\
           '<img src='https://static.codemao.cn/pickduck/SJyHSSkh6.png' height='24px' width='24px'>SLIGHTNING':<a id='l5' target='_blank' href='https://slightning.rechen.xyz/'>,\n\
           '<img src='https://zmh-program.site/avatar/zmh-program.webp' height='24px' width='24px'>zmh-program': <a id='l6' target='_blank' href='https://zmh-program.site/'>,\n\
-          '<img src='https://blog.lolicon.best/img/favicon.webp' height='24px' width='24px'>半昭の小站': <a id='l7' target='_blank' href='https://blog.lolicon.best/'>\n\
+          '<img src='https://blog.lolicon.best/img/favicon.webp' height='24px' width='24px'>半昭の小站': <a id='l7' target='_blank' href='https://blog.lolicon.best/'>,\n\
+          '<img src='https://static.codemao.cn/pickduck/SkmQEAE2T.jpg' title='软软弹弹的' height='24px' width='24px'>猫鱼a': '<a id='l12' target='_blank' href='https://my.acbox.lol/'>'\n\
           }\n\
 In [5]: getCountdown2zhongkao(Dayanshifu)\n\
 Out [5]: '<span id='countdown'>'\n\
@@ -56,6 +57,8 @@ function 给标签上内容(){
   l7.innerHTML="'https://blog.lolicon.best/'";}catch{}
   try{var l8 = document.getElementById("l8");
   l8.innerHTML="little颜";}catch{}
+  try{var l8 = document.getElementById("l12");
+  l8.innerHTML="https://my.acbox.lol/";}catch{}
   try{var cursor = document.getElementById("cursor");
   cursor.innerHTML='|';}catch{}
   try{var 今年 = new Date().getFullYear();
@@ -99,7 +102,7 @@ else {
 输出区.appendChild(文字标签);
 setTimeout(function () {
   终端输出(文本, i + 1);
-}, 35);
+}, 20);
 给标签上内容();
 }
 终端输出(文本, 0);
