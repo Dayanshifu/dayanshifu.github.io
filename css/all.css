@@ -10,7 +10,7 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
   }
-a{color:aquamarine;   
+a{color:#39c5bb;   
     text-decoration:none;
     }
 
@@ -30,7 +30,7 @@ a{color:aquamarine;
   padding: 10px;  
   align-items: start;
   border-radius: 15px;
-  border:2px solid aquamarine
+  border:2px solid #39c5bb
 }
 
 
