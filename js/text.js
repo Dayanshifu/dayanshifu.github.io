@@ -21,7 +21,7 @@ Out [3]: {'hao-littleyan': {\n\
           }\n\
 In [4]: Dayanshifu.getLinks()\n\
 Out [4]: {'感谢你们的支持！':'site',\n\
-          '<img src='https://glacier.tyser.bf/res/icon/icon.svg' height='24px' width='24px'>冰川工作室':<a id='l4' target='_blank' href='https://glacier.tyser.bf/'>,\n\
+          '<img src='https://glacier-studio.github.io/res/icon/icon.svg' height='24px' width='24px'>冰川工作室':<a id='l4' target='_blank' href='https://glacier-studio.github.io/'>,\n\
           '<img src='https://static.codemao.cn/pickduck/SJyHSSkh6.png' height='24px' width='24px'>SLIGHTNING':<a id='l5' target='_blank' href='https://slightning.rechen.xyz/'>,\n\
           '<img src='https://zmh-program.site/avatar/zmh-program.webp' height='24px' width='24px'>zmh-program': <a id='l6' target='_blank' href='https://zmh-program.site/'>,\n\
           '<img src='https://blog.lolicon.best/img/favicon.webp' height='24px' width='24px'>半昭の小站': <a id='l7' target='_blank' href='https://blog.lolicon.best/'>,\n\
@@ -48,7 +48,7 @@ function 给标签上内容(){
   try{var l3 = document.getElementById("l3");
   l3.innerHTML="'https://dayanshifu.github.io/hao-littleyan'";}catch{}
   try{var l4 = document.getElementById("l4");
-  l4.innerHTML="'https://glacier.tyser.bf/'";}catch{}
+  l4.innerHTML="'https://glacier-studio.github.io/'";}catch{}
   try{var l5 = document.getElementById("l5");
   l5.innerHTML="'https://slightning.rechen.xyz/'";}catch{}
   try{var l6 = document.getElementById("l6");
