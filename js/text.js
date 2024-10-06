@@ -16,7 +16,7 @@ In [3]:  Dayanshifu.getWorks()\n\
 Out [3]: {'hao-littleyan': {\n\
             'Description': '👏一个简洁方便的浏览器首页', \n\
             'Github': <a id='l2' target='_blank' href='https://github.com/Dayanshifu/hao-littleyan'>, \n\
-            'Site': <a id='l3' target='_blank' href='https://dayanshifu.github.io/hao-littleyan'>\n\
+            'Site': <a id='l3' target='_blank' href='https://dayanshifu.github.io/home'>\n\
             }\n\
           }\n\
 In [4]:  Dayanshifu.getLinks()\n\
@@ -57,7 +57,7 @@ function 给标签上内容() {
     } catch {}
     try {
         var l3 = document.getElementById("l3");
-        l3.innerHTML = "'https://dayanshifu.github.io/hao-littleyan'";
+        l3.innerHTML = "'https://dayanshifu.github.io/home'";
     } catch {}
     try {
         var l4 = document.getElementById("l4");
