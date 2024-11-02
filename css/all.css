@@ -31,6 +31,24 @@ a{color:#39c5bb;
   align-items: start;
   border:2px solid #39c5bb
 }
+#terminal1 {
+  text-align: center;
+  overflow-y:auto;
+  margin: auto;
+  max-height:300px;
+  max-width: 225px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+  font-family: "Courier New", Courier, monospace;  
+  background-color: #00000094;  
+  color: #fff;  
+  padding: 10px;  
+  align-items: start;
+  border-radius: 0;
+}
 
 
 #terminal::-webkit-scrollbar {
