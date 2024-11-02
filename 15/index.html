@@ -3,18 +3,14 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dayanshifu</title>
+  <title>兰州一中高一15班</title>
   <link rel="icon" href="https://dayanshifu.github.io/favicon.ico">
-  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="https://dayanshifu.github.io/css/all.css">
   <style>
   </style>
 </head>
 
 <body style="padding:0px;margin:0px;border:0px; ">
-  <div id="fullscreen-iframe-container">
-    <iframe id="fullscreen-iframe"
-      style=" display: none;border: 0px;width:100vw;height:100vh;"></iframe>
-  </div>
   <div id="terminal1">
     <div style="height: 10%;"></div>
     <img style="border-radius: 1000px;  border:2px solid #39c5bb" height=128px width="128px"
@@ -23,10 +19,10 @@
     <script>
       setTimeout(() => {
         const loadingText = document.getElementById('terminal1');
-        const fullscreenIframeContainer = document.getElementById('fullscreen-iframe');
         loadingText.style.display = 'none';
-        fullscreenIframeContainer.style.display = 'block';
-        fullscreenIframeContainer.src='http://[240e:336:37:87e0:d601:e325:5942:fc12]:5244/';
+        setTimeout(function () {
+          window.location.href = "http://[240e:336:37:87e0:d601:e325:5942:fc12]:5244/";
+        }, 0);;
       }, 3000);
       const loadingText = document.getElementById('loading-text');
       const states = ['loading.', 'loading..', 'loading...', 'loading'];
@@ -37,7 +33,7 @@
         currentIndex = (currentIndex + 1) % states.length;
       }
 
-      setInterval(updateLoadingText, 150);
+      setInterval(updateLoadingText, 200);
     </script>
     <p>兰州一中高一15班</p>
     <script src="js/text.js"></script>
