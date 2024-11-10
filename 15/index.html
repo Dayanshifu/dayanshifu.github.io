@@ -14,16 +14,27 @@
   <div id="terminal1">
     <div style="height: 10%;"></div>
     <img style="border-radius: 1000px;  border:2px solid #39c5bb" height=128px width="128px"
-      src="https://static.codemao.cn/pickduck/SktvpVQ-yl.png" />
-    <p id="loading-text" style="font-size: large;">Loading</p>
+      src="https://static.codemao.cn/pickduck/HJTNP4yn6.jpg" />
+    <p id="loading-text" style="font-size: large;">Loading</p><!--https://static.codemao.cn/pickduck/SktvpVQ-yl.png-->
     <script>
       setTimeout(() => {
-        const loadingText = document.getElementById('terminal1');
-        loadingText.style.display = 'none';
-        setTimeout(function () {
-          window.location.href = "http://[240e:336:39:d0a0:dc5d:7baa:58aa:d35]:5244/";
-        }, 0);;
+        const queryString = window.location.search;
+        let path = '';
+        if (queryString) {
+          const params = new URLSearchParams(queryString);
+          path = params.get('path');
+        }
+        var a=``
+        if (!path) {
+          window.location.href = 'http://[240e:336:39:d0a0:dc5d:7baa:58aa:d35]:5244/';
+        } 
+        else {
+          window.location.href = `http://[240e:336:39:d0a0:dc5d:7baa:58aa:d35]:5244${path}`;
+        };
       }, 3000);
+      
+      window.onload = function() {
+      }
       const loadingText = document.getElementById('loading-text');
       const states = ['loading.', 'loading..', 'loading...', 'loading'];
       let currentIndex = 0;
