@@ -10,7 +10,34 @@
   </style>
   <script>
     window.onload = function() {
-            const targetUrl = 'http://[240e:336:3b:eb50:5b7a:b4fa:46d7:f038]:5244/';
+            
+        };
+</script>
+</head>
+
+<body style="padding:0px;margin:0px;border:0px; ">
+  <div id="terminal1">
+    <div style="height: 10%;"></div>
+    <img style="border-radius: 1000px;  border:2px solid #39c5bb" height=128px width="128px"
+      src="https://static.codemao.cn/pickduck/HJTNP4yn6.jpg" />
+    <p id="loading-text" style="font-size: large;">Loading</p><!--https://static.codemao.cn/pickduck/SktvpVQ-yl.png-->
+    <script>
+      //setTimeout(() => {
+      //  const queryString = window.location.search;
+      //  let path = '';
+      //  if (queryString) {
+      //    const params = new URLSearchParams(queryString);
+      //    path = params.get('path');
+      //  }
+      //  var a=``
+      //  if (!path) {
+      //    window.location.href = 'http://[240e:336:3b:eb50:5b7a:b4fa:46d7:f038]:5244/';
+      //  } 
+      //  else {
+      //    window.location.href = `http://[240e:336:3b:eb50:5b7a:b4fa:46d7:f038]:5244${path}`;
+      //  };
+      //}, 0);
+      setTimeout(() => {const targetUrl = 'http://[240e:336:3b:eb50:5b7a:b4fa:46d7:f038]:5244/';
             const fallbackUrl = 'http://lzyz2715.back1.idcfengye.com/';
  
             fetch(targetUrl, { method: 'HEAD' })
@@ -29,32 +56,7 @@
                     console.error('Failed to fetch target URL:', error);
                     window.location.href = fallbackUrl;
                 });
-        };
-</script>
-</head>
-
-<body style="padding:0px;margin:0px;border:0px; ">
-  <div id="terminal1">
-    <div style="height: 10%;"></div>
-    <img style="border-radius: 1000px;  border:2px solid #39c5bb" height=128px width="128px"
-      src="https://static.codemao.cn/pickduck/HJTNP4yn6.jpg" />
-    <p id="loading-text" style="font-size: large;">Loading</p><!--https://static.codemao.cn/pickduck/SktvpVQ-yl.png-->
-    <!--<script>
-      setTimeout(() => {
-        const queryString = window.location.search;
-        let path = '';
-        if (queryString) {
-          const params = new URLSearchParams(queryString);
-          path = params.get('path');
-        }
-        var a=``
-        if (!path) {
-          window.location.href = 'http://[240e:336:3b:eb50:5b7a:b4fa:46d7:f038]:5244/';
-        } 
-        else {
-          window.location.href = `http://[240e:336:3b:eb50:5b7a:b4fa:46d7:f038]:5244${path}`;
-        };
-      }, 0);
+      }, 3000);
       
       window.onload = function() {
       }
@@ -68,7 +70,7 @@
       }
 
       setInterval(updateLoadingText, 200);
-    </script>-->
+    </script>
     <p>兰州一中高一15班</p>
     <script src="js/text.js"></script>
   </div>
