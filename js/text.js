@@ -7,18 +7,13 @@ In [1]:  let Dayanshifu = EntityFactory.getEntity('Dayanshifu')\n\
           Hello! \n\
           I'm Dayanshifu\n\
 In [2]:  Dayanshifu.Site()\n\
-Out [2]: {'website':<a id='l1' href='https://dayanshifu.github.io'>,\n\
+Out [2]: {'website':<a id='l1' href='https://lolikon.us.kg'>,\n\
           '<image src='https://www.bilibili.com/favicon.ico'width='16px' height='16px'/>bilibili': <a id='l9' target='_blank' href='https://space.bilibili.com/593963058'>,\n\
           '<image src='https://static.codemao.cn/coco/player/unstable/B1F3qc2Hj.image/svg+xml'width='16px' height='16px'/>codemao': <a id='l10' target='_blank' href='https://shequ.codemao.cn/user/3408348'>,\n\
           '<image src='https://static.codemao.cn/pickduck/B19iXrknT.svg'width='16px' height='16px'/>github': <a id='l11' target='_blank' href='https://github.com/dayanshifu'>\n\
           }\n\
 In [3]:  Dayanshifu.getWorks()\n\
-Out [3]: {'hao-littleyan': {\n\
-            'Description': '👏一个简洁方便的浏览器首页', \n\
-            'Github': <a id='l2' target='_blank' href='https://github.com/Dayanshifu/home'>, \n\
-            'Site': <a id='l3' target='_blank' href='https://dayanshifu.github.io/home'>\n\
-            }\n\
-          }\n\
+Out [3]: {'Home': <a id='l3' target='_blank' href='https://home.lolikon.us.kg'>}\n\
 In [4]:  Dayanshifu.getLinks()\n\
 Out [4]: {'感谢你们的支持！':'site',\n\
           '<img src='https://glacier-studio.github.io/res/icon/icon.svg' height='24px' width='24px'>冰川工作室':<a id='l4' target='_blank' href='https://glacier-studio.github.io/'>,\n\
@@ -30,14 +25,14 @@ Out [4]: {'感谢你们的支持！':'site',\n\
 In [5]:  getCountdown2kaixue(Dayanshifu)\n\
 Out [5]: '<span id='countdown'>'\n\
 In [6]:  getInfo()\n\
-Out [6]: '©2021-<span id='2year'> <a id=l8 href='https://dayanshifu.github.io'>'\n\
+Out [6]: '©2021-<span id='2year'> <a id=l8 href='https://lolikon.us.kg'>'\n\
 In [7]:  <span id='cursor'><script src='js/scroll.js'>";
 var 输出区 = document.getElementById("input");
 
 function 给标签上内容() {
     try {
         var l1 = document.getElementById("l1");
-        l1.innerHTML = "'https://dayanshifu.github.io'";
+        l1.innerHTML = "'https://lolikon.us.kg'";
     } catch {}
     try {
         var l9 = document.getElementById("l9");
@@ -52,12 +47,8 @@ function 给标签上内容() {
         l11.innerHTML = "'https://github.com/dayanshifu'";
     } catch {}
     try {
-        var l2 = document.getElementById("l2");
-        l2.innerHTML = "'https://github.com/Dayanshifu/home'";
-    } catch {}
-    try {
         var l3 = document.getElementById("l3");
-        l3.innerHTML = "'https://dayanshifu.github.io/home'";
+        l3.innerHTML = "'https://home.lolikon.us.kg'";
     } catch {}
     try {
         var l4 = document.getElementById("l4");
