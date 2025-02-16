@@ -68,7 +68,7 @@ function 给标签上内容() {
     } catch {}
     try {
         var l8 = document.getElementById("l8");
-        l8.innerHTML = "little颜";
+        l8.innerHTML = "Dayanshifu";
     } catch {}
     try {
         var l8 = document.getElementById("l12");
