@@ -21,6 +21,7 @@ Out [4]: {'感谢你们的支持！':'site',\n\
           '<img src='https://zmh-program.site/avatar.webp' height='24px' width='24px'>zmh-program': <a id='l6' target='_blank' href='https://zmh-program.site/'>,\n\
           '<img src='https://blog.lolicon.best/img/favicon.webp' height='24px' width='24px'>半昭の小站': <a id='l7' target='_blank' href='https://blog.lolicon.best/'>,\n\
           '<img src='https://static.codemao.cn/pickduck/SkmQEAE2T.jpg' height='24px' width='24px'>猫鱼a': '<a id='l12' target='_blank' href='https://zybqw.github.io/'>'\n\
+          '<img src='https://static.codemao.cn/pickduck/S1Y8l__iJg.jpg' height='24px' width='24px'>ChenServer': '<a id='l13' target='_blank' href='https://chenserver.top/'>'\n\
           }\n\
 In [5]:  getCountdown2kaixue(Dayanshifu)\n\
 Out [5]: '<span id='countdown'>'\n\
@@ -71,8 +72,12 @@ function 给标签上内容() {
         l8.innerHTML = "Dayanshifu";
     } catch {}
     try {
-        var l8 = document.getElementById("l12");
-        l8.innerHTML = "https://zybqw.github.io/";
+        var l12 = document.getElementById("l12");
+        l12.innerHTML = "https://zybqw.github.io/";
+    } catch {}
+    try {
+        var l13 = document.getElementById("l13");
+        l13.innerHTML = "https://chenserver.top/";
     } catch {}
     try {
         var cursor = document.getElementById("cursor");
