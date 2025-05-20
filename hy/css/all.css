@@ -52,7 +52,9 @@ body {
     padding: 10px;
     background-color: white;
 }
-
+.座位容器::-webkit-scrollbar {
+    display: none;
+}
 .行 {
     display: flex;
     justify-content: center;
