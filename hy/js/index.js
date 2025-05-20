@@ -1,4 +1,3 @@
-// 座位配置
 const 座位配置 = [
     {row: 0, seats: "ab ab ab ab ab ab ab 31 29 27 25 23 21 ab 19 17 15 13 11 9 7 5 3 1 2 4 6 8 10 12 14 16 18 20 ab 22 24 26 28 30 32 ab ab ab ab ab ab ab"},
     {row: 1, seats: "ab ab ab ab ab 35 33 31 29 27 25 23 21 ab 19 17 15 13 11 9 7 5 3 1 2 4 6 8 10 12 14 16 18 20 ab 22 24 26 28 30 32 34 36 ab ab ab ab ab"},
@@ -14,7 +13,6 @@ const 座位配置 = [
     {row: " ", seats: " "}
 ];
 
-// DOM元素
 const 座位容器 = document.getElementById('座位容器');
 const 开始按钮 = document.getElementById('开始按钮');
 const 舞台显示 = document.getElementById('舞台区域');
@@ -22,7 +20,6 @@ let 正在运行 = false;
 let 当前高亮 = null;
 let 座位元素集合 = {};
 
-// 初始化缩放
 function initScale() {
     const wrapper = document.getElementById('scaling-wrapper');
     const windowWidth = window.innerWidth;
@@ -36,7 +33,6 @@ function initScale() {
     document.documentElement.style.fontSize = `${scale * 16}px`;
 }
 
-// 生成座位布局
 function generateSeats() {
     座位配置.forEach(行信息 => {
         if (行信息.row === " ") {
@@ -94,7 +90,6 @@ function generateSeats() {
     });
 }
 
-// 执行抽奖动画
 function 执行抽奖(总步骤数, 当前步骤) {
     if (当前步骤 >= 总步骤数) {
         正在运行 = false;
@@ -123,7 +118,6 @@ function 执行抽奖(总步骤数, 当前步骤) {
     }, 速度);
 }
 
-// 初始化
 window.addEventListener('load', function() {
     initScale();
     generateSeats();
@@ -141,7 +135,6 @@ window.addEventListener('load', function() {
     });
 });
 
-// 窗口大小改变时重新缩放
 window.addEventListener('resize', function() {
     initScale();
 });
