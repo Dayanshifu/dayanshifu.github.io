@@ -77,7 +77,7 @@ function 给标签上内容() {
     } catch {}
     try {
         var l13 = document.getElementById("l13");
-        l13.innerHTML = "https://chenserver.top/";
+        l13.innerHTML = "https://etaris.moe/";
     } catch {}
     try {
         var cursor = document.getElementById("cursor");
