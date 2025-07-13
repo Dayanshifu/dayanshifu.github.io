@@ -16,12 +16,13 @@ In [3]:  Dayanshifu.getWorks()\n\
 Out [3]: {'Home': <a id='l3' target='_blank' href='https://home.lolicon.xin'>}\n\
 In [4]:  Dayanshifu.getLinks()\n\
 Out [4]: {'感谢你们的支持！':'site',\n\
-          '<img src='https://glacier-studio.github.io/res/icon/icon.svg' height='24px' width='24px'>冰川工作室':<a id='l4' target='_blank' href='https://glacier-studio.github.io/'>,\n\
+          '<img src='https://static.codemao.cn/pickduck/SJGNRQZ8lg.svg' height='24px' width='24px'>冰川工作室':<a id='l4' target='_blank' href='https://glacier-studio.github.io/'>,\n\
           '<img src='https://static.codemao.cn/pickduck/SJyHSSkh6.png' height='24px' width='24px'>SLIGHTNING':<a id='l5' target='_blank' href='https://slightning.rechen.xyz/'>,\n\
-          '<img src='https://zmh-program.site/avatar.webp' height='24px' width='24px'>zmh-program': <a id='l6' target='_blank' href='https://zmh-program.site/'>,\n\
+          '<img src='https://static.codemao.cn/pickduck/HJlQG0Q-Lge.webp' height='24px' width='24px'>zmh-program': <a id='l6' target='_blank' href='https://zmh-program.site/'>,\n\
           '<img src='https://blog.lolicon.best/img/favicon.webp' height='24px' width='24px'>半昭の小站': <a id='l7' target='_blank' href='https://blog.lolicon.best/'>,\n\
           '<img src='https://static.codemao.cn/pickduck/SkmQEAE2T.jpg' height='24px' width='24px'>猫鱼a': '<a id='l12' target='_blank' href='https://zybqw.github.io/'>'\n\
           '<img src='https://static.codemao.cn/pickduck/S1Y8l__iJg.jpg' height='24px' width='24px'>ChenServer': '<a id='l13' target='_blank' href='https://chenserver.top/'>'\n\
+          '<img src='https://static.codemao.cn/pickduck/rJzpT7WUxe.ico' height='24px' width='24px'>数码空间': '<a id='l14' target='_blank' href='https://1zdigital.space/'>'\n\
           }\n\
 In [5]:  getCountdown2kaixue(Dayanshifu)\n\
 Out [5]: '<span id='countdown'>'\n\
@@ -78,6 +79,10 @@ function 给标签上内容() {
     try {
         var l13 = document.getElementById("l13");
         l13.innerHTML = "https://etaris.moe/";
+    } catch {}
+    try {
+        var l13 = document.getElementById("l14");
+        l13.innerHTML = "https://1zdigital.space/";
     } catch {}
     try {
         var cursor = document.getElementById("cursor");
