@@ -21,7 +21,7 @@ Out [4]: {'感谢你们的支持！':'site',\n\
           '<img src='https://static.codemao.cn/pickduck/HJlQG0Q-Lge.webp' height='24px' width='24px'>zmh-program': <a id='l6' target='_blank' href='https://zmh-program.site/'>,\n\
           '<img src='https://blog.lolicon.best/img/favicon.webp' height='24px' width='24px'>半昭の小站': <a id='l7' target='_blank' href='https://blog.lolicon.best/'>,\n\
           '<img src='https://static.codemao.cn/pickduck/SkmQEAE2T.jpg' height='24px' width='24px'>猫鱼a': '<a id='l12' target='_blank' href='https://zybqw.github.io/'>'\n\
-          '<img src='https://static.codemao.cn/pickduck/S1Y8l__iJg.jpg' height='24px' width='24px'>ChenServer': '<a id='l13' target='_blank' href='https://chenserver.top/'>'\n\
+          '<img src='https://static.codemao.cn/pickduck/S1Y8l__iJg.jpg' height='24px' width='24px'>ChenServer': '<a id='l13' target='_blank' href='https://etaris.moe/'>'\n\
           '<img src='https://static.codemao.cn/pickduck/rJzpT7WUxe.ico' height='24px' width='24px'>数码空间': '<a id='l14' target='_blank' href='https://1zdigital.space/'>'\n\
           }\n\
 In [5]:  getCountdown2kaixue(Dayanshifu)\n\
