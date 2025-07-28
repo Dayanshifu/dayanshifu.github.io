@@ -9,6 +9,19 @@ new simpleParallax(image, {
   overflow: true
 });
 
+document.oncontextmenu = function(){
+  return false;
+}
+
+
+document.onselectstart = function(){
+  return false;
+}
+
+
+document.oncopy = function(){
+  return false;
+}
 // 添加菜单点击事件
 var menuButton = document.getElementById("nav-menu");
 menuButton.addEventListener('click',function(){
