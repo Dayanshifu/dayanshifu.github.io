@@ -279,7 +279,7 @@ a.about-button {
   border-radius: 29px;
   box-shadow: 0px 12px 12px -9px rgba(0,0,0,0.29);
   margin-top: 64px;
-  width: fit-content;
+  width: 80px;
   transition: ease-in-out 0.3s;
   white-space: nowrap;
   align-items: center;
