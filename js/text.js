@@ -27,7 +27,7 @@ Out [4]: {'感谢你们的支持！':'site',\n\
 In [5]:  getCountdown2kaixue(Dayanshifu)\n\
 Out [5]: '<span id='countdown'>'\n\
 In [6]:  getInfo()\n\
-Out [6]: '©2021-<span id='2year'> <a id=l8 href='https://lolicon.xin'>'\n\
+Out [6]: '©<span id='2year'> <a id=l8 href='https://lolicon.xin'>'\n\
 In [7]:  <span id='cursor'><script src='js/scroll.js'>";
 var 输出区 = document.getElementById("input");
 
@@ -89,8 +89,19 @@ function 给标签上内容() {
         cursor.innerHTML = '|';
     } catch {}
     try {
+        function toChineseYear(year) {
+          var chineseNumbers = ['〇', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+          var yearStr = year.toString();
+          var result = '';
+          for (var i = 0; i < yearStr.length; i++) {
+            result += chineseNumbers[parseInt(yearStr.charAt(i))];
+          }
+          return result;
+        }
+        
         var 今年 = new Date().getFullYear();
-        document.getElementById("2year").innerHTML = 今年;
+        var a1 = toChineseYear(今年);
+        document.getElementById("2year").innerHTML = a1;
     } catch {}
 }
 
