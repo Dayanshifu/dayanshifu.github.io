@@ -35,74 +35,74 @@ function 给标签上内容() {
     try {
         var l1 = document.getElementById("l1");
         l1.innerHTML = "'https://lolicon.xin'";
-    } catch {}
+    } catch { }
     try {
         var l9 = document.getElementById("l9");
         l9.innerHTML = "'https://space.bilibili.com/593963058'";
-    } catch {}
+    } catch { }
     try {
         var l10 = document.getElementById("l10");
         l10.innerHTML = "'https://shequ.codemao.cn/user/3408348'";
-    } catch {}
+    } catch { }
     try {
         var l11 = document.getElementById("l11");
         l11.innerHTML = "'https://github.com/dayanshifu'";
-    } catch {}
+    } catch { }
     try {
         var l3 = document.getElementById("l3");
         l3.innerHTML = "'https://home.lolicon.xin'";
-    } catch {}
+    } catch { }
     try {
         var l4 = document.getElementById("l4");
         l4.innerHTML = "'https://glacier-studio.github.io/'";
-    } catch {}
+    } catch { }
     try {
         var l5 = document.getElementById("l5");
         l5.innerHTML = "'https://slightning.rechen.xyz/'";
-    } catch {}
+    } catch { }
     try {
         var l6 = document.getElementById("l6");
         l6.innerHTML = "'https://zmh-program.site/'";
-    } catch {}
+    } catch { }
     try {
         var l7 = document.getElementById("l7");
         l7.innerHTML = "'https://blog.lolicon.best/'";
-    } catch {}
+    } catch { }
     try {
         var l8 = document.getElementById("l8");
         l8.innerHTML = "Dayanshifu";
-    } catch {}
+    } catch { }
     try {
         var l12 = document.getElementById("l12");
         l12.innerHTML = "https://zybqw.github.io/";
-    } catch {}
+    } catch { }
     try {
         var l13 = document.getElementById("l13");
         l13.innerHTML = "https://etaris.moe/";
-    } catch {}
+    } catch { }
     try {
         var l13 = document.getElementById("l14");
         l13.innerHTML = "https://1zdigital.space/";
-    } catch {}
+    } catch { }
     try {
         var cursor = document.getElementById("cursor");
         cursor.innerHTML = '|';
-    } catch {}
+    } catch { }
     try {
         function toChineseYear(year) {
-          var chineseNumbers = ['〇', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
-          var yearStr = year.toString();
-          var result = '';
-          for (var i = 0; i < yearStr.length; i++) {
-            result += chineseNumbers[parseInt(yearStr.charAt(i))];
-          }
-          return result;
+            var chineseNumbers = ['〇', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+            var yearStr = year.toString();
+            var result = '';
+            for (var i = 0; i < yearStr.length; i++) {
+                result += chineseNumbers[parseInt(yearStr.charAt(i))];
+            }
+            return result;
         }
-        
+
         var 今年 = new Date().getFullYear();
         var a1 = toChineseYear(今年);
         document.getElementById("2year").innerHTML = a1;
-    } catch {}
+    } catch { }
 }
 
 var 中考日期 = new Date("2024-08-13T14:30:00");
@@ -118,7 +118,7 @@ function 计时器更新() {
     try {
         var 倒计时标签 = document.getElementById("countdown");
         倒计时标签.textContent = 倒计时文本;
-    } catch {}
+    } catch { }
 }
 
 function 终端输出(文本, i) {
@@ -140,11 +140,11 @@ function 终端输出(文本, i) {
     }
     输出区.appendChild(文字标签);
     if (状态 == 0) {
-        setTimeout(function() {
+        setTimeout(function () {
             终端输出(文本, i + 1);
         }, 30);
     } else {
-        setTimeout(function() {
+        setTimeout(function () {
             终端输出(文本, i + 1);
         }, 0);
     }

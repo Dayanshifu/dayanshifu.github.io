@@ -1,29 +1,29 @@
 :root {
 	--heo-white: #fff;
-	--heo-white-op: hsla(0,0%,100%,0.2);
+	--heo-white-op: hsla(0, 0%, 100%, 0.2);
 	--heo-black: #000;
-	--heo-black-op: rgba(0,0,0,0.2);
-	--heo-none: rgba(0,0,30,0);
+	--heo-black-op: rgba(0, 0, 0, 0.2);
+	--heo-none: rgba(0, 0, 30, 0);
 	--heo-gray: #999;
-	--heo-gray-op: hsla(0,0%,60%,0.17);
+	--heo-gray-op: hsla(0, 0%, 60%, 0.17);
 	--heo-vip: #e5a80d;
 	--heo-theme: #ff4dff;
-	--heo-theme-op: rgba(255,77,255,0.2);
-	--heo-theme-op-deep: rgba(255,77,255,0.8);
-	--heo-theme-none: rgba(255,77,255,0.1);
-	--heo-main: linear-gradient(135deg,#4d9eff,#ff4dff);
-	--heo-main-op: rgba(77,158,255,0.2);
-	--heo-main-none: rgba(77,158,255,0.1);
+	--heo-theme-op: rgba(255, 77, 255, 0.2);
+	--heo-theme-op-deep: rgba(255, 77, 255, 0.8);
+	--heo-theme-none: rgba(255, 77, 255, 0.1);
+	--heo-main: linear-gradient(135deg, #4d9eff, #ff4dff);
+	--heo-main-op: rgba(77, 158, 255, 0.2);
+	--heo-main-none: rgba(77, 158, 255, 0.1);
 	--heo-shadow-theme: 0 8px 12px -3px var(--heo-theme-op);
-	--heo-shadow-blackdeep: 0 2px 16px -3px rgba(0,0,0,0.15);
+	--heo-shadow-blackdeep: 0 2px 16px -3px rgba(0, 0, 0, 0.15);
 	--heo-shadow-main: 0 8px 12px -3px var(--heo-main-op);
-	--heo-shadow-blue: 0 8px 12px -3px rgba(77,158,255,0.4);
-	--heo-shadow-white: 0 8px 12px -3px hsla(0,0%,100%,0.2);
-	--heo-shadow-black: 0 0 12px 4px rgba(0,0,0,0.05);
-	--heo-shadow-yellow: 0px 38px 77px -26px rgba(255,201,62,0.12);
-	--heo-shadow-red: 0 8px 12px -3px rgba(255,77,77,0.3);
-	--heo-shadow-green: 0 8px 12px -3px rgba(77,255,77,0.3);
-	--heo-logo-color: linear-gradient(215deg,#4d9eff,#ff4dff);
+	--heo-shadow-blue: 0 8px 12px -3px rgba(77, 158, 255, 0.4);
+	--heo-shadow-white: 0 8px 12px -3px hsla(0, 0%, 100%, 0.2);
+	--heo-shadow-black: 0 0 12px 4px rgba(0, 0, 0, 0.05);
+	--heo-shadow-yellow: 0px 38px 77px -26px rgba(255, 201, 62, 0.12);
+	--heo-shadow-red: 0 8px 12px -3px rgba(255, 77, 77, 0.3);
+	--heo-shadow-green: 0 8px 12px -3px rgba(77, 255, 77, 0.3);
+	--heo-logo-color: linear-gradient(215deg, #4d9eff, #ff4dff);
 	--heo-snackbar-time: 5s;
 	--style-border: 1px solid var(--heo-card-border);
 	--style-border-always: 1px solid var(--heo-card-border);
@@ -44,28 +44,28 @@
 	--heo-pink: #ff7c7c;
 	--heo-green: #4dff4d;
 	--heo-yellow: #ffcc4d;
-	--heo-yellow-op: rgba(255,204,77,0.2);
+	--heo-yellow-op: rgba(255, 204, 77, 0.2);
 	--heo-orange: #f93;
-	--heo-background: linear-gradient(145deg,#f0f8ff,#fff0f5);
+	--heo-background: linear-gradient(145deg, #f0f8ff, #fff0f5);
 	--heo-reverse: #000;
-	--heo-maskbg: hsla(0,0%,100%,0.6);
-	--heo-maskbgdeep: hsla(0,0%,100%,0.85);
+	--heo-maskbg: hsla(0, 0%, 100%, 0.6);
+	--heo-maskbgdeep: hsla(0, 0%, 100%, 0.85);
 	--heo-hovertext: var(--heo-theme);
-	--heo-ahoverbg: rgba(255,240,245,0.7);
+	--heo-ahoverbg: rgba(255, 240, 245, 0.7);
 	--heo-lighttext: var(--heo-main);
-	--heo-scrollbar: rgba(77,158,255,0.4);
-	--heo-card-btn-bg: linear-gradient(135deg,#4d9eff,#ff4dff);
-	--heo-post-blockquote-bg: rgba(240,248,255,0.7);
-	--heo-post-tabs-bg: rgba(255,240,245,0.7);
-	--heo-secondbg: linear-gradient(145deg,#e6f0ff,#ffe6f0);
-	--heo-shadow-nav: 0 5px 20px -5px rgba(77,158,255,0.4);
-	--heo-card-bg: hsla(0,0%,100%,0.9);
-	--heo-card-bg-op: hsla(0,0%,100%,0.2);
-	--heo-card-bg-none: hsla(0,0%,100%,0);
-	--heo-shadow-lightblack: 0 5px 20px -5px rgba(77,158,255,0.2);
-	--heo-shadow-light2black: 0 5px 20px -5px rgba(255,77,255,0.2);
-	--heo-card-border: rgba(77,158,255,0.3);
-	--heo-shadow-border: 0 8px 20px -4px rgba(77,158,255,0.2);
+	--heo-scrollbar: rgba(77, 158, 255, 0.4);
+	--heo-card-btn-bg: linear-gradient(135deg, #4d9eff, #ff4dff);
+	--heo-post-blockquote-bg: rgba(240, 248, 255, 0.7);
+	--heo-post-tabs-bg: rgba(255, 240, 245, 0.7);
+	--heo-secondbg: linear-gradient(145deg, #e6f0ff, #ffe6f0);
+	--heo-shadow-nav: 0 5px 20px -5px rgba(77, 158, 255, 0.4);
+	--heo-card-bg: hsla(0, 0%, 100%, 0.9);
+	--heo-card-bg-op: hsla(0, 0%, 100%, 0.2);
+	--heo-card-bg-none: hsla(0, 0%, 100%, 0);
+	--heo-shadow-lightblack: 0 5px 20px -5px rgba(77, 158, 255, 0.2);
+	--heo-shadow-light2black: 0 5px 20px -5px rgba(255, 77, 255, 0.2);
+	--heo-card-border: rgba(77, 158, 255, 0.3);
+	--heo-shadow-border: 0 8px 20px -4px rgba(77, 158, 255, 0.2);
 	--style-border-forever: 2px solid var(--heo-main)
 }
 
@@ -90,7 +90,7 @@ body {
 	display: flex;
 	margin: auto;
 	flex-direction: column;
-	font-family: PingFangSC-Regular,Roboto,Helvetica Neue,Helvetica,Tahoma,Arial,PingFang SC-Light,Microsoft YaHei;
+	font-family: PingFangSC-Regular, Roboto, Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC-Light, Microsoft YaHei;
 	align-items: center
 }
 
@@ -104,7 +104,8 @@ a {
 	-webkit-user-drag: none
 }
 
-a,span {
+a,
+span {
 	user-select: none
 }
 
@@ -143,7 +144,8 @@ img {
 	top: 0
 }
 
-.nav,.nav-content {
+.nav,
+.nav-content {
 	display: flex;
 	width: 90%;
 	align-items: center;
@@ -223,18 +225,19 @@ a.nav-item {
 	margin: 0 2px;
 	padding: 8px 16px;
 	border-radius: 30px;
-	background: hsla(0,0%,100%,.1)
+	background: hsla(0, 0%, 100%, .1)
 }
 
 a.nav-item:hover {
 	opacity: 1;
-	background: hsla(0,0%,100%,.3);
+	background: hsla(0, 0%, 100%, .3);
 	color: var(--heo-white);
 	transform: translateY(-2px);
-	box-shadow: 0 5px 15px rgba(255,77,255,.3)
+	box-shadow: 0 5px 15px rgba(255, 77, 255, .3)
 }
 
-.first-stack,.nav-right {
+.first-stack,
+.nav-right {
 	display: flex;
 	align-items: center
 }
@@ -253,7 +256,8 @@ a.nav-item:hover {
 	font-family: system-ui
 }
 
-.title-group,span.discription-text {
+.title-group,
+span.discription-text {
 	font-weight: 400;
 	color: #336;
 	font-weight: 700
@@ -272,7 +276,7 @@ a.about-button {
 	background: var(--heo-card-btn-bg);
 	color: var(--heo-white);
 	border-radius: 29px;
-	box-shadow: 0 12px 12px -9px rgba(0,0,0,.29);
+	box-shadow: 0 12px 12px -9px rgba(0, 0, 0, .29);
 	margin-top: 64px;
 	width: 80px;
 	transition: .3s ease-in-out;
@@ -285,7 +289,7 @@ a.about-button {
 
 a.about-button:hover {
 	background: var(--heo-main);
-	box-shadow: 0 12px 12px -9px rgba(255,77,255,.4);
+	box-shadow: 0 12px 12px -9px rgba(255, 77, 255, .4);
 	transform: translateY(-3px)
 }
 
@@ -318,14 +322,15 @@ h2.group-title {
 	margin-bottom: 60px
 }
 
-a.group-item-icon,img.group-item-icon-img {
+a.group-item-icon,
+img.group-item-icon-img {
 	width: 100px;
 	height: 100px
 }
 
 img.group-item-icon-img {
 	border-radius: 28px;
-	box-shadow: 0 5px 15px rgba(77,158,255,.3);
+	box-shadow: 0 5px 15px rgba(77, 158, 255, .3);
 	transition: transform .3s ease
 }
 
@@ -349,7 +354,8 @@ span.linkbotton-tips {
 	color: var(--heo-white)
 }
 
-.group-info,.group-info-group {
+.group-info,
+.group-info-group {
 	display: flex;
 	flex-direction: column
 }
@@ -397,7 +403,7 @@ a.linkbutton {
 a.linkbutton:hover {
 	filter: brightness(1.2);
 	transform: translateY(-2px);
-	box-shadow: 0 5px 15px rgba(77,158,255,.3)
+	box-shadow: 0 5px 15px rgba(77, 158, 255, .3)
 }
 
 a.linkbutton:active {
@@ -443,7 +449,7 @@ html::-webkit-scrollbar {
 }
 
 .product-banner {
-	background-image: linear-gradient(180deg,#4d9eff,#ff4dff);
+	background-image: linear-gradient(180deg, #4d9eff, #ff4dff);
 	width: 100%;
 	padding: 94px 0 0;
 	height: fit-content;
@@ -454,7 +460,8 @@ html::-webkit-scrollbar {
 	border-radius: 30px
 }
 
-.banner-info,.product-banner {
+.banner-info,
+.product-banner {
 	display: flex;
 	flex-direction: column;
 	align-items: center
@@ -507,7 +514,7 @@ a.primary-button {
 
 a.primary-button:hover {
 	transform: translateY(-2px);
-	box-shadow: 0 5px 15px hsla(0,0%,100%,.3)
+	box-shadow: 0 5px 15px hsla(0, 0%, 100%, .3)
 }
 
 a.second-link {
@@ -558,7 +565,7 @@ a.second-link:hover {
 }
 
 .special-card {
-	background: linear-gradient(135deg,#4d9eff,#ff4dff);
+	background: linear-gradient(135deg, #4d9eff, #ff4dff);
 	width: 90%;
 	border-radius: 30px;
 	max-width: 1200px;
@@ -566,7 +573,7 @@ a.second-link:hover {
 	display: flex;
 	overflow: hidden;
 	height: 500px;
-	box-shadow: 0 20px 40px rgba(77,158,255,.3)
+	box-shadow: 0 20px 40px rgba(77, 158, 255, .3)
 }
 
 .special-card-left {
@@ -589,7 +596,8 @@ a.second-link:hover {
 	margin-top: 8px
 }
 
-.special-card-left .discription,.special-card-left .title {
+.special-card-left .discription,
+.special-card-left .title {
 	line-height: 1.2;
 	max-width: calc(100% - 700px);
 	color: var(--heo-white)
@@ -714,7 +722,8 @@ span.avatar-name {
 		margin-bottom: 12px
 	}
 
-	.show-menu .nav,.show-menu .nav-content {
+	.show-menu .nav,
+	.show-menu .nav-content {
 		background: var(--heo-navbg)
 	}
 
@@ -757,7 +766,7 @@ span.avatar-name {
 	.menu-list a.nav-item {
 		padding: 8px;
 		font-size: 16px;
-		border-bottom: 1px solid hsla(0,0%,100%,.2);
+		border-bottom: 1px solid hsla(0, 0%, 100%, .2);
 		width: 90%;
 		margin-left: 0
 	}
@@ -815,7 +824,8 @@ span.avatar-name {
 		margin-top: 30px
 	}
 
-	.group-info-group,.group-item {
+	.group-info-group,
+	.group-item {
 		flex-direction: row
 	}
 
@@ -838,7 +848,8 @@ span.avatar-name {
 		margin: 0
 	}
 
-	a.group-item-icon,img.group-item-icon-img {
+	a.group-item-icon,
+	img.group-item-icon-img {
 		width: 40px;
 		height: 40px;
 		border-radius: 12px
@@ -886,28 +897,30 @@ span.avatar-name {
 
 :root {
 	--heo-fontcolor: #336;
-	--heo-secondtext: rgba(60,60,67,0.6)
+	--heo-secondtext: rgba(60, 60, 67, 0.6)
 }
 
-.title-group,h2.group-title {
+.title-group,
+h2.group-title {
 	color: var(--heo-fontcolor);
 	transition: color .3s ease
 }
 
-.group-description,span.discription-text {
+.group-description,
+span.discription-text {
 	color: var(--heo-secondtext);
 	transition: color .3s ease
 }
 
 :root {
 	--heo-button-text: #fff;
-	--heo-button-bg: linear-gradient(135deg,#4d9eff,#ff4dff);
-	--heo-button-hover: linear-gradient(135deg,#3d8eef,#ee3def);
-	--heo-navbg: linear-gradient(135deg,rgba(77,158,255,0.9),rgba(255,77,255,0.9));
+	--heo-button-bg: linear-gradient(135deg, #4d9eff, #ff4dff);
+	--heo-button-hover: linear-gradient(135deg, #3d8eef, #ee3def);
+	--heo-navbg: linear-gradient(135deg, rgba(77, 158, 255, 0.9), rgba(255, 77, 255, 0.9));
 	--heo-dark-button-text: #fff;
-	--heo-dark-button-bg: linear-gradient(135deg,#3a7bc8,#c53ac5);
-	--heo-dark-button-hover: linear-gradient(135deg,#2a6bb8,#b52ab5);
-	--heo-navbg-dark: linear-gradient(135deg,#3a7bc8,#c53ac5)
+	--heo-dark-button-bg: linear-gradient(135deg, #3a7bc8, #c53ac5);
+	--heo-dark-button-hover: linear-gradient(135deg, #2a6bb8, #b52ab5);
+	--heo-navbg-dark: linear-gradient(135deg, #3a7bc8, #c53ac5)
 }
 
 .dark-theme {
@@ -917,13 +930,17 @@ span.avatar-name {
 	--heo-navbg: var(--heo-navbg-dark)
 }
 
-a.about-button,a.about-button1,a.linkbutton {
+a.about-button,
+a.about-button1,
+a.linkbutton {
 	color: var(--heo-button-text);
 	background: var(--heo-button-bg);
 	transition: all .3s ease
 }
 
-a.about-button1:hover,a.about-button:hover,a.linkbutton:hover {
+a.about-button1:hover,
+a.about-button:hover,
+a.linkbutton:hover {
 	background: var(--heo-button-hover)
 }
 
@@ -933,7 +950,7 @@ a.primary-button {
 }
 
 .dark-theme a.primary-button {
-	background: hsla(0,0%,100%,.1);
+	background: hsla(0, 0%, 100%, .1);
 	color: var(--heo-white)
 }
 
@@ -943,7 +960,7 @@ a.primary-button:hover {
 }
 
 .dark-theme a.primary-button:hover {
-	background: hsla(0,0%,100%,.2)
+	background: hsla(0, 0%, 100%, .2)
 }
 
 .iconfont {
@@ -954,13 +971,13 @@ a.primary-button:hover {
 @media (prefers-color-scheme:dark) {
 	:root {
 		--heo-fontcolor: #e0e0e0;
-		--heo-background: linear-gradient(145deg,#1a1a2e,#16213e);
-		--heo-secondbg: linear-gradient(145deg,#0f0f1a,#0a1229);
-		--heo-card-bg: rgba(30,30,46,0.9);
-		--heo-card-border: rgba(77,158,255,0.1);
-		--heo-maskbg: rgba(0,0,0,0.6);
-		--heo-maskbgdeep: rgba(0,0,0,0.85);
-		--heo-secondtext: rgba(200,200,220,0.6)
+		--heo-background: linear-gradient(145deg, #1a1a2e, #16213e);
+		--heo-secondbg: linear-gradient(145deg, #0f0f1a, #0a1229);
+		--heo-card-bg: rgba(30, 30, 46, 0.9);
+		--heo-card-border: rgba(77, 158, 255, 0.1);
+		--heo-maskbg: rgba(0, 0, 0, 0.6);
+		--heo-maskbgdeep: rgba(0, 0, 0, 0.85);
+		--heo-secondtext: rgba(200, 200, 220, 0.6)
 	}
 
 	.nav-content {
@@ -981,13 +998,13 @@ a.primary-button:hover {
 
 :root {
 	--heo-dark-fontcolor: #e0e0e0;
-	--heo-dark-background: linear-gradient(145deg,#1a1a2e,#16213e);
-	--heo-dark-secondbg: linear-gradient(145deg,#0f0f1a,#0a1229);
-	--heo-dark-card-bg: rgba(30,30,46,0.9);
-	--heo-dark-card-border: rgba(77,158,255,0.1);
-	--heo-dark-maskbg: rgba(0,0,0,0.6);
-	--heo-dark-maskbgdeep: rgba(0,0,0,0.85);
-	--heo-dark-secondtext: rgba(200,200,220,0.6)
+	--heo-dark-background: linear-gradient(145deg, #1a1a2e, #16213e);
+	--heo-dark-secondbg: linear-gradient(145deg, #0f0f1a, #0a1229);
+	--heo-dark-card-bg: rgba(30, 30, 46, 0.9);
+	--heo-dark-card-border: rgba(77, 158, 255, 0.1);
+	--heo-dark-maskbg: rgba(0, 0, 0, 0.6);
+	--heo-dark-maskbgdeep: rgba(0, 0, 0, 0.85);
+	--heo-dark-secondtext: rgba(200, 200, 220, 0.6)
 }
 
 .dark-theme {
@@ -1027,8 +1044,9 @@ a.primary-button:hover {
 	transform: scale(1.1)
 }
 
-:root,body {
-	transition: background-color .3s ease,color .3s ease
+:root,
+body {
+	transition: background-color .3s ease, color .3s ease
 }
 
 .about-section {
@@ -1066,7 +1084,8 @@ a.primary-button:hover {
 	line-height: 1.8
 }
 
-.about-content,.about-subtitle {
+.about-content,
+.about-subtitle {
 	margin: 0;
 	padding-top: 0;
 	padding-bottom: 0;
@@ -1092,10 +1111,13 @@ a.primary-button:hover {
 	display: inline
 }
 
-.dark-theme .about-content,.dark-theme .about-subtitle,.dark-theme .about-title {
+.dark-theme .about-content,
+.dark-theme .about-subtitle,
+.dark-theme .about-title {
 	color: var(--heo-dark-fontcolor)
 }
 
-.dark-theme .about-subtitle:before,.dark-theme .about-title:after {
+.dark-theme .about-subtitle:before,
+.dark-theme .about-title:after {
 	background: var(--heo-dark-button-bg)
 }

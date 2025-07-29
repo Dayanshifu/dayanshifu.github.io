@@ -9,46 +9,46 @@ new simpleParallax(image, {
   overflow: true
 });
 
-document.oncontextmenu = function(){
+document.oncontextmenu = function () {
   return false;
 }
 
 
-document.onselectstart = function(){
+document.onselectstart = function () {
   return false;
 }
 
 
-document.oncopy = function(){
+document.oncopy = function () {
   return false;
 }
 // 添加菜单点击事件
 var menuButton = document.getElementById("nav-menu");
-menuButton.addEventListener('click',function(){
-  if(document.getElementById("body").classList.contains('show-menu')) {
+menuButton.addEventListener('click', function () {
+  if (document.getElementById("body").classList.contains('show-menu')) {
     heoWeb.hideMenu();
-  }else {
+  } else {
     heoWeb.showMenu();
   }
-},false)
+}, false)
 
 //关闭菜单
 $('.menu-list').click(function () {
-	heoWeb.hideMenu();
+  heoWeb.hideMenu();
 });
 
 //阻止菜单滚动
-document.querySelector('.menu-list').addEventListener('wheel',(e)=>{
+document.querySelector('.menu-list').addEventListener('wheel', (e) => {
   e.preventDefault()
 })
 
 var heoWeb = {
   //显示菜单
-  showMenu: function() {
+  showMenu: function () {
     document.getElementById("body").classList.add("show-menu");
   },
 
-  hideMenu: function() {
+  hideMenu: function () {
     document.getElementById("body").classList.remove("show-menu");
   },
 
@@ -60,7 +60,7 @@ var heoWeb = {
     let startPosition = window.pageYOffset;
     let distance = targetPosition - startPosition;
     let startTime = null;
-    
+
     function animation(currentTime) {
       if (startTime === null) startTime = currentTime;
       let timeElapsed = currentTime - startTime;
@@ -68,14 +68,14 @@ var heoWeb = {
       window.scrollTo(0, run);
       if (timeElapsed < 600) requestAnimationFrame(animation);
     }
-  
+
     function ease(t, b, c, d) {
       t /= d / 2;
       if (t < 1) return c / 2 * t * t + b;
       t--;
       return -c / 2 * (t * (t - 2) - 1) + b;
     }
-  
+
     requestAnimationFrame(animation);
   }
 }
