@@ -48,7 +48,7 @@ function initScale() {
 function 加载设置() {
     const 音效已开启 = localStorage.getItem('soundEnabled');
     if (音效已开启 !== null) {
-        音效开关.checked = 音效已开启 === 'true';
+        音效开关.checked = 音效已开启 === 'false';//true
     }
     const 保存的排数范围 = localStorage.getItem('seatRange');
     if (保存的排数范围 !== null) {
