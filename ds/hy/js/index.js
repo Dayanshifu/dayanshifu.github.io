@@ -14,14 +14,9 @@ const 座位配置 = [
 const 座位容器 = document.getElementById('座位容器');
 const 开始按钮 = document.getElementById('开始按钮');
 const 舞台显示 = document.getElementById('舞台区域');
-const 轮次显示 = document.getElementById('轮次显示');
-let 正在运行 = false;
-let 当前高亮列表 = [];
-let 座位元素集合 = {};
-let 当前轮次 = 0;
-const 总轮次数 = 5;
-let 当前语音索引 = -1;
-//const targetTime = new Date("2025-05-23T16:30:00").getTime();
+const 抽奖人数输入 = document.getElementById('抽奖人数'); 
+const 音效开关 = document.getElementById('音效开关'); 
+const 排数范围选项 = document.querySelectorAll('input[name="排数范围"]');
 const targetTime = new Date("2025-05-24T16:30:00").getTime();
 
 const sounds = [
@@ -33,6 +28,10 @@ const sounds = [
 ];
 const 音乐 = new Audio();
 
+let 正在运行 = false;
+let 当前高亮列表 = [];
+let 座位元素集合 = {};
+let 当前排数范围 = "全部";
 function initScale() {
     const wrapper = document.getElementById('scaling-wrapper');
     const windowWidth = window.innerWidth;
@@ -45,7 +44,49 @@ function initScale() {
     wrapper.style.transform = `translate(-50%, -50%) scale(${scale})`;
     document.documentElement.style.fontSize = `${scale * 16}px`;
 }
+function 加载设置() {
+    const 音效已开启 = localStorage.getItem('soundEnabled');
+    if (音效已开启 !== null) {
+        音效开关.checked = 音效已开启 === 'true';
+    }
+    const 保存的排数范围 = localStorage.getItem('seatRange');
+    if (保存的排数范围 !== null) {
+        当前排数范围 = 保存的排数范围;
+        document.querySelector(`input[name="排数范围"][value="${当前排数范围}"]`).checked = true;
+    }
+}
 
+function 保存设置() {
+    localStorage.setItem('soundEnabled', 音效开关.checked);
+    localStorage.setItem('seatRange', 当前排数范围);
+}
+
+function 获取可用座位键() {
+    let 所有座位键 = Object.keys(座位元素集合);
+
+    switch(当前排数范围) {
+        case "不含第0排":
+            所有座位键 = 所有座位键.filter(key => !key.startsWith('0-'));
+            break;
+        case "不含中间0排":
+            所有座位键 = 所有座位键.filter(key => {
+                const [排号, 座位号] = key.split('-');
+                if (排号 === '0') {
+                    const seatNum = parseInt(座位号, 10);
+                    if (seatNum >= 1 && seatNum <= 20) {
+                        return false; 
+                    }
+                }
+                return true;
+            });
+            break;
+        case "全部":
+        default:
+            break;
+    }
+
+    return 所有座位键;
+}
 function generateSeats() {
     座位配置.forEach(行信息 => {
         if (行信息.row === " ") {
@@ -121,13 +162,24 @@ function 更新舞台显示(座位列表) {
     舞台显示.innerHTML = `<div class="高亮列表">${显示文本}</div>`;
 }
 
+function 限制人数输入() {
+    let value = parseInt(抽奖人数输入.value);
+    if (isNaN(value) || value < 1) {
+        抽奖人数输入.value = 1;
+    } else if (value > 6) { 
+        抽奖人数输入.value = 6;
+    }
+}
+
 function 执行抽奖(总步骤数, 当前步骤) {
     if (当前步骤 >= 总步骤数) {
         const 抽中列表 = [];
-        const 需要人数 = 获取抽奖人数();
-        const 可用座位 = Object.keys(座位元素集合);
+        const 需要人数 = parseInt(抽奖人数输入.value) || 1;
+        let 可用座位 = 获取可用座位键(); 
 
-        while (抽中列表.length < 需要人数 && 可用座位.length > 0) {
+        const 实际抽取数 = Math.min(需要人数, 可用座位.length);
+        
+        while (抽中列表.length < 实际抽取数 && 可用座位.length > 0) {
             const 随机索引 = Math.floor(Math.random() * 可用座位.length);
             const 随机座位键 = 可用座位.splice(随机索引, 1)[0];
             抽中列表.push(随机座位键);
@@ -141,38 +193,29 @@ function 执行抽奖(总步骤数, 当前步骤) {
         });
         更新舞台显示(抽中列表);
 
-
         
         let now = new Date().getTime();
         let delay = targetTime - now;
-        if (delay <= 0) {
-            当前语音索引 = 当前轮次
-            音乐.src = sounds[当前语音索引].path;
+        if (delay <= 0 && 音效开关.checked) {
+            const 随机语音索引 = Math.floor(Math.random() * sounds.length);
+            音乐.src = sounds[随机语音索引].path;
             音乐.play();
         }
         
 
-        当前轮次++;
-        轮次显示.textContent = `第 ${当前轮次}/${总轮次数} 轮`;
-        if (当前轮次 >= 总轮次数) {
-            开始按钮.textContent = "感谢参与";
-            开始按钮.classList.add('active');
-        } else {
-            开始按钮.textContent = "继续抽奖";
-        }
         正在运行 = false;
         开始按钮.disabled = false;
-        开始按钮.textContent = 当前轮次 < 总轮次数 ? "继续抽奖" : "感谢参与";
+        开始按钮.textContent = "开始抽奖";
         return;
     }
 
     
     重置高亮();
-    const 临时人数 = 获取抽奖人数();
-    const 可用座位 = Object.keys(座位元素集合);
+    const 临时人数 = parseInt(抽奖人数输入.value) || 1; 
+    let 可用座位 = 获取可用座位键();
     const 临时列表 = [];
 
-    for (let i = 0; i < 临时人数; i++) {
+    for (let i = 0; i < 临时人数 && 可用座位.length > 0; i++) {
         const 随机索引 = Math.floor(Math.random() * 可用座位.length);
         const 随机座位键 = 可用座位[随机索引];
         const 元素 = 座位元素集合[随机座位键];
@@ -191,16 +234,22 @@ function 执行抽奖(总步骤数, 当前步骤) {
 window.addEventListener('load', function () {
     initScale();
     generateSeats();
+    加载设置();
+
+    音效开关.addEventListener('change', 保存设置);
+    排数范围选项.forEach(option => {
+        option.addEventListener('change', (event) => {
+            当前排数范围 = event.target.value;
+            保存设置();
+        });
+    });
+    
+    抽奖人数输入.addEventListener('input', 限制人数输入);
+    抽奖人数输入.addEventListener('change', 限制人数输入);
 
     开始按钮.addEventListener('click', () => {
-        if (当前轮次 >= 总轮次数) return;
         if (!正在运行) {
-            if (当前轮次 >= 总轮次数) {
-                当前轮次 = 0;
-                重置高亮();
-                舞台显示.textContent = "";
-            }
-
+            console.log('按钮被点击了')
             正在运行 = true;
             开始按钮.disabled = true;
             开始按钮.textContent = "抽奖中...";
