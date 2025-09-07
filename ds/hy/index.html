@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>兰州一中社团展演活动</title>
     <link rel="icon" href="https://home.lolicon.xin/favicon.ico" />
-    <link rel="stylesheet" href="hy/css/all.css">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 <body style="user-select: none;">
     <div id="scaling-wrapper">
@@ -15,10 +15,9 @@
         <div class="控制区">
             <label for="抽奖人数">抽奖人数:</label>
             <input type="number" id="抽奖人数" min="1" value="1" max="6">
-            <div style="display: none;/*把这里改成inline,就可以出现音效开关了*/">
-            <input type="checkbox" id="音效开关" class="开关">
-            <label for="音效开关" class="开关标签">音效</label>
-            </div>
+            <label for="音效开关" class="开关标签" 
+            style="display: none;/*把这里改成inline,就可以出现音效开关了*/">
+                <input type="checkbox" id="音效开关" class="开关">  音效</label>
             <label><input type="radio" name="排数范围" value="全部" checked> 全部</label>
             <label><input type="radio" name="排数范围" value="不含第0排"> 不含第0排</label>
             <label><input type="radio" name="排数范围" value="不含中间0排"> 不含中间0排</label><br>
@@ -42,6 +41,6 @@
         </div>
     </div>
 
-    <script src="hy/js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
