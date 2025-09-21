@@ -1232,9 +1232,11 @@
             
             // 内容完整性得分（最多10分）
             const contentScore = Math.min(essay.length / 50, 10);
-            score += contentScore;
+            if (contentScore <=10){
+            score += contentScore;}else{score+=10;}
             
             // 确保不超过20分
+            if (score > 20) score = 20;
             return Math.min(Math.round(score), 20);
         }
     </script>
