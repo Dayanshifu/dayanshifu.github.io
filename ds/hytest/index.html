@@ -1147,7 +1147,7 @@
             
             if (questionType === '填空题') {
                 reviewItem.innerHTML = `
-                    <p>${questionNumber}. ${questionText}</p>
+                    <p>${questionText}</p>
                     <div class="answer-feedback ${isCorrect ? 'feedback-correct' : 'feedback-incorrect'}">
                         您的答案: 
                         <span class="${isCorrect ? 'correct' : 'incorrect'} user-answer">${userAnswer || '未作答'}</span>
@@ -1156,7 +1156,7 @@
                 `;
             } else {
                 reviewItem.innerHTML = `
-                    <p>${questionNumber}. ${questionText}</p>
+                    <p>${questionText}</p>
                     <div class="answer-feedback ${isCorrect ? 'feedback-correct' : 'feedback-incorrect'}">
                         您的答案: <span class="${isCorrect ? 'correct' : 'incorrect'}">${userAnswer || '未作答'}</span>
                         ${!isCorrect ? ` | 正确答案: <span class="correct">${correctAnswer}</span>` : ''}
@@ -1196,20 +1196,18 @@
             });
             
             reviewItem.innerHTML = `
-                <p>41. ${questionText}</p>
-                <div class="essay-review">
-                    <p><strong>您的答案:</strong></p>
-                    <p>${userEssay || '未作答'}</p>
-                    
-                    <div class="reference-answer">
-                        <p><strong>参考答案:</strong></p>
-                        <p>${essayReference}</p>
-                    </div>
-                    
-                    <div class="score-reason">
-                        <p>得分: <span class="correct">${score}</span> 分（满分20分）</p>
-                        <p>匹配关键词: ${matchedKeywords.length > 0 ? matchedKeywords.join('、') : '无'}</p>
-                    </div>
+                <p>${questionText}</p>
+                <p><strong>您的答案:</strong></p>
+                <p>${userEssay || '未作答'}</p>
+                
+                <div class="reference-answer">
+                    <p><strong>参考答案:</strong></p>
+                    <p>${essayReference}</p>
+                </div>
+                
+                <div class="score-reason">
+                    <p>得分: <span class="correct">${score}</span> 分（满分20分）</p>
+                    <p>匹配关键词: ${matchedKeywords.length > 0 ? matchedKeywords.join('、') : '无'}</p>
                 </div>
             `;
             
