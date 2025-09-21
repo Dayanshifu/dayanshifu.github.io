@@ -1231,7 +1231,7 @@
             score += Math.min(keywordCount, 5) * 2;
             
             // 内容完整性得分（最多10分）
-            const contentScore = Math.min(essay.length / 50, 10);
+            const contentScore = Math.min(essay.length / 10, 10);
             if (contentScore <=10){
             score += contentScore;}else{score+=10;}
             
