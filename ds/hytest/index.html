@@ -1150,7 +1150,7 @@
                     <div class="answer-feedback ${isCorrect ? 'feedback-correct' : 'feedback-incorrect'}">
                         您的答案: 
                         <span class="${isCorrect ? 'correct' : 'incorrect'} user-answer">${userAnswer || '未作答'}</span>
-                        ${!isCorrect ? `<span class="correct-answer">正确答案: ${correctAnswer}</span>` : ''}
+                        ${!isCorrect ? `正确答案: <span class="correct-answer">${correctAnswer}</span>` : ''}
                     </div>
                 `;
             } else {
