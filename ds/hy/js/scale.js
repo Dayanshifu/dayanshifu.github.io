@@ -3,16 +3,23 @@ function initScale() {
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
     
-    // 计算缩放比例
-    const widthRatio = windowWidth / 1200;
-    const heightRatio = windowHeight / 800;
-    const scale = Math.min(widthRatio, heightRatio) * 0.95; // 留5%边距
-    
-    // 应用缩放
-    wrapper.style.transform = `translate(-50%, -50%) scale(${scale})`;
-    
-    // 更新字体大小
-    document.documentElement.style.fontSize = `${scale * 16}px`;
+    // 移动设备使用不同的缩放策略
+    if (windowWidth < 768) {
+        wrapper.style.width = '100%';
+        wrapper.style.height = '100%';
+        wrapper.style.transform = 'translate(-50%, -50%)';
+        document.documentElement.style.fontSize = '14px';
+    } else {
+        // 桌面设备的缩放逻辑保持不变
+        const widthRatio = windowWidth / 1200;
+        const heightRatio = windowHeight / 800;
+        const scale = Math.min(widthRatio, heightRatio) * 0.95;
+        
+        wrapper.style.width = '1200px';
+        wrapper.style.height = '800px';
+        wrapper.style.transform = `translate(-50%, -50%) scale(${scale})`;
+        document.documentElement.style.fontSize = `${scale * 16}px`;
+    }
 }
 
 // 生成座位

@@ -73,15 +73,15 @@ body {
     margin-bottom: 5px;
     background-color: white;
 }
-
 .行标签 {
-    width: 60px;
+    width: 40px;  /* 减小宽度以适应小屏幕 */
     text-align: center;
-    margin: 0 10px;
+    margin: 0 5px;  /* 减小边距 */
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    font-size: 14px;  /* 设置基础字体大小 */
 }
 
 .座位 {
@@ -112,7 +112,6 @@ body {
 .过道 {
     width: 23px;
 }
-
 .控制区 {
     text-align: center;
     background-color: white;
@@ -120,17 +119,22 @@ body {
     padding: 15px 0;
     padding-top: 0;
     width: 100%;
-    position: absolute;
-    bottom: 0;
     position: relative;
+    font-size: 16px; /* 设置基础字体大小 */
+}
+.控制区 label {
+    font-size: inherit; /* 继承父元素字体大小 */
 }
 
+.控制区 input[type="number"] {
+    font-size: inherit; /* 继承父元素字体大小 */
+    height: 1.5em;
+}
 button {
     font-size: 20px;
     height: 40px;
     width: 120px;
     padding-bottom: 5px;
-    padding-top: 0px;
     margin: 0 10px;
     background-color: #ff3030;
     color: white;
@@ -138,7 +142,7 @@ button {
     border-radius: 10000px;
     cursor: pointer;
     transition: all 0.2s;
-    margin-top: 8px;
+    margin-top: 3px;
 }
 
 button:disabled {
@@ -170,9 +174,9 @@ button:disabled {
     font-size: 12px;
     color: #999;
     position: absolute;
-    bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 5px;
 }
 
 .输入组, .开关组 {
@@ -195,5 +199,3 @@ button:disabled {
     margin-left: 15px;
     bottom:px;
 }
-
-/* 你可以根据需要进一步调整这些样式 */
