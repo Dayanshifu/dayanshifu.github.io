@@ -32,10 +32,6 @@
 	--style-border-dashed: 1px dashed var(--heo-theme-op)
 }
 
-::selection {
-	background: var(--heo-fontcolor);
-	color: var(--heo-background)
-}
 
 :root {
 	height: 100%;
