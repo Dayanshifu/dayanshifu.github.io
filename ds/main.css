@@ -1046,8 +1046,8 @@ body {
 }
 
 .about-section {
-	margin: 80px 0;
-	padding: 40px 0
+	margin: 10px 0;
+	padding: 0px 0
 }
 
 .about-container {
@@ -1116,4 +1116,104 @@ body {
 .dark-theme .about-subtitle:before,
 .dark-theme .about-title:after {
 	background: var(--heo-dark-button-bg)
+}
+
+
+.friends-section {
+	margin: 0px 0;
+	margin-bottom: 40px;
+}
+.friends-container {
+	margin: 0 auto;
+	max-width: 800px;
+}
+.friends-title {
+	font-size: 28px;
+	color: var(--heo-fontcolor);
+	text-align: center;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.friends-title:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 4px;
+	background: var(--heo-main);
+	margin: 15px auto 0;
+	border-radius: 2px;
+}
+
+.friends-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.friend-card {
+	background: var(--heo-card-bg);
+	border-radius: 16px;
+	padding: 20px;
+	box-shadow: var(--heo-shadow-lightblack);
+	transition: all 0.3s ease;
+	border: var(--style-border);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	text-decoration: none;
+	color: inherit;
+	height: 225px; /* 固定高度242px */
+	width: 100%; /* 默认宽度100% */
+}
+
+.friend-card:hover {
+	transform: translateY(-5px);
+	box-shadow: var(--heo-shadow-blue);
+	border-color: var(--heo-theme);
+}
+
+.friend-avatar {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border: 2px solid var(--heo-white);
+	box-shadow: var(--heo-shadow-lightblack);
+}
+
+.friend-name {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--heo-fontcolor);
+	margin-bottom: 10px;
+	line-height: 1.2;
+}
+
+.friend-description {
+	font-size: 12px;
+	color: var(--heo-secondtext);
+	line-height: 1.4;
+	margin: 0;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* 桌面端样式 */
+@media screen and (min-width: 501px) {
+	.friend-card {
+		width: 150px; /* 桌面端宽度150px */
+	}
+}
+/* 手机端样式 */
+@media screen and (max-width: 500px) {
+	.friend-card {
+		width: 100%; /* 手机端宽度100% */
+	}
 }
