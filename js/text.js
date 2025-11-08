@@ -10,25 +10,21 @@ In [2]:  Dayanshifu.Site()\n\
 Out [2]: {'website':<a id='l1' href='https://lolicon.xin'>,\n\
           '<image src='https://www.bilibili.com/favicon.ico'width='16px' height='16px'/>bilibili': <a id='l9' target='_blank' href='https://space.bilibili.com/593963058'>,\n\
           '<image src='https://static.codemao.cn/coco/player/unstable/B1F3qc2Hj.image/svg+xml'width='16px' height='16px'/>codemao': <a id='l10' target='_blank' href='https://shequ.codemao.cn/user/3408348'>,\n\
-          '<image src='https://static.codemao.cn/pickduck/B19iXrknT.svg'width='16px' height='16px'/>github': <a id='l11' target='_blank' href='https://github.com/dayanshifu'>\n\
+          '<image src='https://cdn-community.bcmcdn.com/47/community/d2ViXzMwMDFfMzQwODM0OF8wXzE3NjI1Nzk4MjQ4NzhfYTc5ZTY1MjI.png'width='16px' height='16px'/>github': <a id='l11' target='_blank' href='https://github.com/dayanshifu'>\n\
           }\n\
 In [3]:  Dayanshifu.getWorks()\n\
 Out [3]: {'Home': <a id='l3' target='_blank' href='https://home.lolicon.xin'>}\n\
 In [4]:  Dayanshifu.getLinks()\n\
-Out [4]: {'感谢你们的支持！':'site',\n\
-          '<img src='https://static.codemao.cn/pickduck/SJGNRQZ8lg.svg' height='24px' width='24px'>冰川工作室':<a id='l4' target='_blank' href='https://glacier-studio.github.io/'>,\n\
-          '<img src='https://static.codemao.cn/pickduck/SJyHSSkh6.png' height='24px' width='24px'>SLIGHTNING':<a id='l5' target='_blank' href='https://slightning.rechen.xyz/'>,\n\
-          '<img src='https://static.codemao.cn/pickduck/HJlQG0Q-Lge.webp' height='24px' width='24px'>zmh-program': <a id='l6' target='_blank' href='https://zmh-program.site/'>,\n\
-          '<img src='https://blog.lolicon.best/img/favicon.webp' height='24px' width='24px'>半昭の小站': <a id='l7' target='_blank' href='https://blog.lolicon.best/'>,\n\
-          '<img src='https://static.codemao.cn/pickduck/SkmQEAE2T.jpg' height='24px' width='24px'>猫鱼a': '<a id='l12' target='_blank' href='https://zybqw.github.io/'>'\n\
+Out [4]: {'感谢你们的支持！': 'site',\n\
+          '<img src='https://static.codemao.cn/pickduck/SkmQEAE2T.jpg' height='24px' width='24px'>猫鱼a': '<a id='l12' target='_blank' href='https://aurzex.github.io/'>'\n\
           '<img src='https://static.codemao.cn/pickduck/S1Y8l__iJg.jpg' height='24px' width='24px'>ChenServer': '<a id='l13' target='_blank' href='https://etaris.moe/'>'\n\
-          '<img src='https://static.codemao.cn/pickduck/rJzpT7WUxe.ico' height='24px' width='24px'>数码空间': '<a id='l14' target='_blank' href='https://1zdigital.space/'>'\n\
+          '<img src='https://cravatar.com/avatar/0fc2c5f90ea8afbfb604182b74a423ce?d=mp&s=240' height='24px' width='24px'>你好李鑫': '<a id='l14' target='_blank' href='https://1zdigital.space/'>'\n\
+          '<img src='https://cdn-community.bcmcdn.com/47/community/d2ViXzMwMDFfMzQwODM0OF8wXzE3NjI1MzUxMDI0MjFfNjUyYjBjNWE.jpeg' height='24px' width='24px'>HMZ': '<a id='l6' target='_blank' href='https://hmz168.lolicon.xin/'>'\n\
+          '<img src='https://static.codemao.cn/pickduck/rJzpT7WUxe.ico' height='24px' width='24px'>数码空间': '<a id='l7' target='_blank' href='https://hello.1zdigital.space/'>'\n\
           }\n\
-In [5]:  getCountdown2kaixue(Dayanshifu)\n\
-Out [5]: '<span id='countdown'>'\n\
-In [6]:  getInfo()\n\
-Out [6]: '©<span id='2year'> <a id=l8 href='https://lolicon.xin'>'\n\
-In [7]:  <span id='cursor'><script src='js/scroll.js'>";
+In [5]:  Dayanshifu.getInfo()\n\
+Out [5]: '©<span id='2year'> <a id=l8 href='https://lolicon.xin'>'\n\
+In [6]:  <span id='cursor'><script src='js/scroll.js'>";
 var 输出区 = document.getElementById("input");
 
 function 给标签上内容() {
@@ -62,11 +58,11 @@ function 给标签上内容() {
     } catch { }
     try {
         var l6 = document.getElementById("l6");
-        l6.innerHTML = "'https://zmh-program.site/'";
+        l6.innerHTML = "'https://hmz168.lolicon.xin/'";
     } catch { }
     try {
         var l7 = document.getElementById("l7");
-        l7.innerHTML = "'https://blog.lolicon.best/'";
+        l7.innerHTML = "'https://hello.1zdigital.space/'";
     } catch { }
     try {
         var l8 = document.getElementById("l8");
@@ -74,7 +70,7 @@ function 给标签上内容() {
     } catch { }
     try {
         var l12 = document.getElementById("l12");
-        l12.innerHTML = "https://zybqw.github.io/";
+        l12.innerHTML = "https://aurzex.github.io/";
     } catch { }
     try {
         var l13 = document.getElementById("l13");
