@@ -19,7 +19,7 @@ Out [4]: {'感谢你们的支持！': 'site',\n\
           '<img src='https://static.codemao.cn/pickduck/SkmQEAE2T.jpg' height='24px' width='24px'>猫鱼a': '<a id='l12' target='_blank' href='https://aurzex.github.io/'>',\n\
           '<img src='https://static.codemao.cn/pickduck/S1Y8l__iJg.jpg' height='24px' width='24px'>ChenServer': '<a id='l13' target='_blank' href='https://etaris.moe/'>',\n\
           '<img src='https://cravatar.com/avatar/0fc2c5f90ea8afbfb604182b74a423ce?d=mp&s=240' height='24px' width='24px'>你好李鑫': '<a id='l14' target='_blank' href='https://1zdigital.space/'>',\n\
-          '<img src='https://cdn-community.bcmcdn.com/47/community/d2ViXzMwMDFfMzQwODM0OF8wXzE3NjI1MzUxMDI0MjFfNjUyYjBjNWE.jpeg' height='24px' width='24px'>HMZ': '<a id='l6' target='_blank' href='https://hmz168.lolicon.xin/'>',\n\
+          '<img src='https://cdn-community.bcmcdn.com/47/community/d2ViXzMwMDFfMzQwODM0OF8wXzE3NjI1MzUxMDI0MjFfNjUyYjBjNWE.jpeg' height='24px' width='24px'>HMZ': '<a id='l6' target='_blank' href='https://hmz168.1zdigital.space/'>',\n\
           '<img src='https://static.codemao.cn/pickduck/rJzpT7WUxe.ico' height='24px' width='24px'>数码空间': '<a id='l7' target='_blank' href='https://hello.1zdigital.space/'>'\n\
           }\n\
 In [5]:  Dayanshifu.getInfo()\n\
@@ -58,7 +58,7 @@ function 给标签上内容() {
     } catch { }
     try {
         var l6 = document.getElementById("l6");
-        l6.innerHTML = "https://hmz168.lolicon.xin/";
+        l6.innerHTML = "https://hmz168.1zdigital.space/";
     } catch { }
     try {
         var l7 = document.getElementById("l7");
